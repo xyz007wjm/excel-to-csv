@@ -52,7 +52,7 @@ class ExcelToCsvApp:
 
         desc = tk.Label(
             self.root,
-            text="支持 .xlsx / .xls 文件，分隔符为分号 (;)",
+            text="支持 .xlsx / .xls 文件，分隔符为分号 (;)，输出到 output 文件夹",
             font=("Arial", 10),
             fg="gray",
         )
@@ -253,8 +253,9 @@ class ExcelToCsvApp:
 
     def _convert_single(self, file_path):
         base = os.path.splitext(os.path.basename(file_path))[0]
-        out_dir = os.path.dirname(file_path)
-        out_name = f"{base}-1.csv"
+        out_dir = os.path.join(os.path.dirname(file_path), "output")
+        os.makedirs(out_dir, exist_ok=True)
+        out_name = f"{base}.csv"
         out_path = os.path.join(out_dir, out_name)
 
         ext = os.path.splitext(file_path)[1].lower()

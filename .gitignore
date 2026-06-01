@@ -1,0 +1,18 @@
+# Build outputs
+dist/
+build/
+*.spec
+*.exe
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Project temp
+output/
+ExcelToCSV_download/
+启动.command
