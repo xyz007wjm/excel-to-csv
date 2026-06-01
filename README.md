@@ -46,6 +46,6 @@ pyinstaller --onefile --windowed --name "Excel转CSV" excel_to_csv.py
 
 ## 软件信息
 
-- 版本：v1.0
+- 版本：v1.0.1
 - 作者：Jack Wang
 - 博客：https://wangjinming.com

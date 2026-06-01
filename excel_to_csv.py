@@ -20,7 +20,7 @@ except ImportError:
 
 # 软件信息
 APP_NAME = "Excel 转 CSV 工具"
-APP_VERSION = "1.0"
+APP_VERSION = "1.0.1"
 APP_AUTHOR = "Jack Wang"
 APP_PHONE = "15657317797"
 APP_BLOG = "https://wangjinming.com"
